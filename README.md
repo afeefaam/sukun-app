@@ -20,15 +20,19 @@ Sukun is a peaceful, minimal app that shows daily Islamic Duas in Arabic and Eng
 
 **Afeefa Malik**  
 [GitHub](https://github.com/afeefaam)
----
-## 💻 How to Run Locally
-1. Clone the repo:
+---## 💻 How to Run Locally
+
+1. **Clone the repo:**
+
    ```bash
    git clone https://github.com/afeefaam/sukun-app.git
    cd sukun-app
-2. Instal Dependencies:
-     - npm install
-3. Start the dev server:
-  - npm run dev
-4. Open in browser:
-  - http://localhost:5173
+1. **Install dependencies:**
+npm install
+
+3. **Start the dev server:**
+npm run dev
+
+4. **Open in browser:**
+http://localhost:5173
+
