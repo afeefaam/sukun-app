@@ -1,2 +1,282 @@
-main {
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #dbeafe, #e0d4f7, #fefae0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; /* space between title and button */
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.card-container {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flipped .card {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.arabic {
+  font-size: 2rem;
+  font-family: 'Amiri', serif;
+  direction: rtl;
+}
+
+.translation {
+  font-size: 1.2rem;
+  font-family: 'Amiri', serif;
+  font-style: italic;
+}
+
+.instruction {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 10px;
+}
+.dark .instruction{
+  color: #f3f3f3
+}
+
+.button {
+  margin-top: 3rem;
+  padding: 12px 28px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background: #a78bfa;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: linear-gradient(to right, #7c3aed, #c084fc);
+  transform: scale(1.05);
+}
+.dark .button{
+  background: #facc15; /* yellow-400 */
+  color: #f3f3f3;
+}
+.dark .button:hover{
+  background: #eee2ba; /* yellow-300 */
+}
+.dark {
+  color: #f3f3f3;
+}
+
+.dark .front,
+.dark .back {
+  background: #333;
+  color: #f3f3f3;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.mode-toggle {
+  padding: 6px 12px;
+  font-size: 1rem;
+  background: #888;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-left: 1rem;
+}
+.mode-toggle:hover{
+  background: #555;
+  transform: scale(1.05);
+}
+body.dark {
+  background: linear-gradient(to bottom, #a09c9c, #4b4949);
+  transition: background 0.3s ease;
+}
+.dark .mode-toggle{
+  background: #eee2ba;
+  color: black;
+}
+.dark .mode-toggle:hover{
+  background: #ffd166;
+}
+.button.mode. dark {
+  background: #ffd166;
+  color: black;
+}
+.tasbih{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.tasbih-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.tasbih-btn:hover{
+  transform: scale(1.1);
+}
+.tasbih-count{
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+}
+.dark .tasbih-count{
+  color: #f3f3f3;
+}
+.dark .tasbih-btn{
+  background: #ebe2bb;
+  color: #333;
+}
+.reset-btn{
+  margin-top: -1rem;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  background: #444444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.reset-btn:hover{
+  background: #8d8686;
+  transform: scale(1.05);
+}
+.save-btn {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.save-btn:hover {
+  transform: scale(1.2);
+}
+.tab-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-toggle button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.dark .tab-toggle button {
+  background: #444;
+  color: white;
+}
+.saved-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.saved-card {
+  position: relative;
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  margin: 1rem auto;
+}
+.dark .saved-card {
+  background: #2c2c2c;
+  color: white;
+}
+.delete-btn {
+  margin-top: 0.5rem;
+  padding: -20px 10px;
+  border: none;
+  background: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.2s ease;
+}
+.delete-btn:hover {
+  transform: scale(1.05);
 }
