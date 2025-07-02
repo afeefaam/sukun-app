@@ -1,17 +1,34 @@
-## Running React on Replit
+# 🌙 Sukun – Daily Dua App
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+Sukun is a peaceful, minimal app that shows daily Islamic Duas in Arabic and English. Designed with calm aesthetics and simplicity, this app helps users reflect spiritually with just a tap.
+---
+## ✨ Features
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+- 🕊️ **Daily Duas** – Tap to view a new dua
+- 🔄 **Flip Card** – Tap the card to reveal English translation
+- 🌗 **Dark / Light Mode** toggle
+- 💖 **Save Duas** – Add favorites to local storage
+- 📿 **Tasbih Counter** – Tap to count, reset anytime
+---
+## 📦 Built With
+- React
+- TypeScript
+- Vite
+- CSS Modules
+---
+## 🧑‍💻 Author
 
-Using the two in conjunction is one of the fastest ways to build a web app.
-
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
-
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
-
-### Typescript
-
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+**Afeefa Malik**  
+[GitHub](https://github.com/afeefaam)
+---
+## 💻 How to Run Locally
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/afeefaam/sukun-app.git
+   cd sukun-app
+2. Instal Dependencies:
+     - npm install
+3. Start the dev server:
+  - npm run dev
+4. Open in browser:
+  - http://localhost:5173
