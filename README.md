@@ -1,6 +1,9 @@
 # 🌙 Sukun – Daily Dua App
 
 Sukun is a peaceful, minimal app that shows daily Islamic Duas in Arabic and English. Designed with calm aesthetics and simplicity, this app helps users reflect spiritually with just a tap.
+
+## 🔗 Check it out
+https://sukun-app.vercel.app/
 ---
 ## ✨ Features
 
